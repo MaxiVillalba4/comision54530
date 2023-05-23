@@ -3,167 +3,154 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container-img{
-    display: flex;
-    width: 110rem;
-    height: 15rem;
-    justify-content: space-evenly;
-    position: relative;
-    top: 20rem;
-}
 
-.estrellas{
-    background-image: url(https://images.unsplash.com/photo-1628660541287-982dc7774ca1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
-    background-position: absolute;
-background-size: 100%;
-}
-
-.imagenes-portada img{
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-}
-.imagenes-portada h3{
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-}
-
-.portada{
-    display: flex;
-    background-image:url(https://images.unsplash.com/photo-1633292659065-e4f0bccdf42b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHJvcGF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60) ;
-    background-repeat: no-repeat;
+html{
+    background-image: url(../assets/fondo.jpg);
     background-size: 100%;
-    background-position: absolute;
 }
 
-
-.paginas{
+.paginas ul{
     display: flex;
+    width: 100%;
+    height: 5rem;
     flex-direction: row;
     background-color: blueviolet;
-    position:sticky;
-    top: 0%;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.portada-texto h1{
-    color: lightgreen;
-    font-size: 8rem;
-    position: fixed;
-    top: 5rem;
-}
-
-.portada-texto h2{
-    color: aliceblue;
-    font-size: 5rem;
-    position: fixed;
-    top: 10rem;
-    right: 10rem;
-}
-
-.circulo{
-    border-radius: 40%;
-}
-
-footer{
-    display: flex;
-    background-color: lightgreen;
-    color: aliceblue;
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
     justify-content: space-between;
 }
 
-.accesorios-catalogo img{
-    width: 400px;
-    height: 400px;                                                                                                   
-    object-fit: contain ;
+.paginas button{
+    width: 20rem;
+    height: 5rem;
+    align-items: center;
+    background-color: black;
+    
 }
 
-.accesorios-catalogo h2{
-    text-align: center;
+.paginas a{
     color: aliceblue;
-    font-size: 48px;
-}
-
-.overwear-catalogo img{
-    width: 300px;
-    height: 300px;                                                                                                   
-    object-fit: contain ;
-}
-
-.overwear-catalogo h2{
-    text-align: center;
-    color: aliceblue;
-    font-size: 48px;
-}
-.underwear-catalogo img{
-    width: 300px;
-    height: 300px;                                                                                                   
-    object-fit: contain ;
-}
-
-.underwear-catalogo h2{
-    text-align: center;
-    color: aliceblue;
-    font-size: 48px;
-}
-
-
-.rectangulo-rosa img{
-    width: 800px;
-    height: 800px;                                                                                                   
-    object-fit: contain ;
-}
-
-.rectangulo-rosa h1{
-    font-size: 8rem;
-    position: fixed;
-    left: 50rem;
-    top: 5rem;
-}
-.rectangulo-rosa p{
-    font-size: 4rem;
-    position: fixed;
-    left: 50rem;
-    top: 15rem;
-    right: 5rem;
-}
-.rectangulo-rosa button{
-    width: 10rem;
-    height: 2rem;
-    background-color: aliceblue;
-    position: fixed;
-    right: 60%rem;
-    top: 80%;
-}
-
-.info-nosotros p{
-    font-size: 3rem;
-    position: fixed;
-    top: 22rem;
-}
-.fabrica img{
-    width: 800px;
-    height: 800px;                                                                                                   
-    object-fit: contain ;
-    right: 0;
-    bottom: 5rem;
-}
-.fabrica p{
     font-size: 2rem;
-    position: fixed;
-    top: 50rem;
-    left: 5rem;
-    right: 30rem;
-}
-.rectangulo-rosa{
-    background-color: lightpink;
+    text-decoration: none;
 }
 
-.tabla{
-    background-color: lightpink;
+.paginas a:hover{
+    text-decoration: underline;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+.hero main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 20% 40% 10%;
+    grid-template-areas: 
+    "titulo titulo ."
+    ". subtitulo subtitulo"
+    "imagen1 imagen2 imagen3"
+    "imagen1 imagen2 imagen3";
+}
+
+main h1{
+    display: grid;
+    grid-area: titulo;
+    font-size: 8rem;
+    justify-content: center;
+    color: aliceblue;
+}
+
+main h2{
+    display: grid;
+    grid-area: subtitulo;
+    font-size: 6rem;
+    justify-content: center;
+    color: lightgreen;
+}
+
+
+main .imagen-portada1 {
+    display: grid;
+    grid-area: imagen1;
+    height: 20rem;
+    justify-content: center;
+}
+
+.imagen-portada1 img{
+    height: 18rem;
+    border-radius: 15%;
+}
+
+main .imagen-portada2 {
+    display: grid;
+    grid-area: imagen2;
+    height: 20rem;
+    justify-content: center;
+}
+
+.imagen-portada2 img{
+    height: 18rem;
+    border-radius: 15%;
+}
+
+main .imagen-portada3 {
+    display: grid;
+    grid-area: imagen3;
+    height: 20rem;
+    justify-content: center;
+}
+
+.imagen-portada3 img{
+    height: 18rem;
+    border-radius: 15%;
+}
+
+.imagen-portada1 a{
+    position: relative;
+    line-height:normal;
+    display:table-caption;
+    margin:0;
+    padding:5px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.imagen-portada2 a{
+    position: relative;
+    line-height:normal;
+    display:table-caption;
+    margin:0;
+    padding:5px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.imagen-portada3 a{
+    position: relative;
+    line-height:normal;
+    display:table-caption;
+    margin:0;
+    padding:5px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    background-color: lightgreen;
+    position: absolute;
+    bottom:0;
+    height: auto;
+    left:0;
+    width:100%;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: black;
 }
