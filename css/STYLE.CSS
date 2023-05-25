@@ -8,7 +8,32 @@ html{
     background-image: url(../assets/fondo.jpg);
     background-size: 100%;
 }
+.header{
+    background: darkviolet;
+    height: 80px;
+    width: 100%;
+}
 
+.header ul{
+    float: right;
+    margin-right: 20px;
+}
+.header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.header ul li a{
+    color: #fff;
+    font-size: 2rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: black;
+    transition: .5s;
+}
 
 header ul{
     display: flex;
@@ -338,6 +363,52 @@ padding: 10%;
     font-size: 4rem;
 }
 
+.producto-compra {
+    display: grid;
+    width: 90%;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: 
+    ". producto ."
+    "img-prod info info"
+    "img-prod compra precio";
+    margin: 50px 50px;
+    background-color: lightpink;
+    justify-content: space-between;
+}
+
+.producto-compra img{
+    grid-area: img-prod;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 30rem;
+}
+
+.producto-compra h1{
+    grid-area: producto;
+    font-size: 8rem;
+}
+
+.producto-compra p{
+    padding: 5%;
+    grid-area: info;
+    font-size: 2.5rem;
+}
+
+.producto-compra a{
+    grid-area: compra;
+}
+
+.producto-compra button{
+    grid-area: precio;
+    font-size: 2rem;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+}
 
 footer {
     display: flex;
@@ -352,5 +423,165 @@ footer {
 footer a{
     text-decoration: none;
     color: black;
+}
+
+
+@media (max-width:1024px){
+    .catalogo-links h1{
+        font-size: 5rem;
+        padding-left: 2rem;
+    }
+    .catalogo-links h2{
+        font-size: 4rem;
+        top: 9%;
+}
+.producto-compra h1{
+    font-size: 6rem;
+}
+.producto-compra p{
+    font-size: 1.8rem;
+    padding-left: 60px;
+}
+.producto-compra a{
+    padding-left: 60px;
+}
+.producto-compra img{
+    padding-bottom: 20px;
+    height: 25rem;
+}
+}
+
+@media (max-width: 768px){
+    .header{
+        width: 100% ;
+        justify-content: center;
+    }
+    .header ul li a{
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .catalogo-links a{
+        font-size: 3rem;
+    }
+    .catalogo-links h2{
+        font-size: 4rem;
+        top: 8%;
+    }
+    .producto-compra h1{
+        font-size: 5rem;
+    }
+    .producto-compra p{
+        font-size: 1.4rem;
+        padding-left: 70px;
+    }
+    .producto-compra a{
+        padding-left: 70px;
+    }
+    .producto-compra img{
+        height: 20rem;
+        padding-bottom: 20px;
+    }
+    .producto-compra button{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+@media (max-width: 425px){
+    .header{
+        width: 100% ;
+        height: 60px;
+        justify-content: center;
+    }
+    li a.active, li a:hover{
+        background: none;
+    }
+    .header ul li a{
+        padding: 0
+    }
+    .catalogo-links a{
+        font-size: 2rem;
+    }
+    .catalogo-links h2{
+        font-size: 3rem;
+        top: 7%;
+    }
+    .catalogo-links h1{
+        font-size: 4rem;
+        padding-left: 70px;
+    }
+    .catalogo-links img{
+        height: 15rem;
+    }
+   
+    .producto-compra{
+        background-color: lightpink;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-rows: 20% 40% 20% 20% ;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen imagen"
+        "info precio"
+        "info compra";
+        justify-items: center;
+    }
+    .producto-compra h1{
+        grid-area: titulo;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .producto-compra p{
+        grid-area: info;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    
+    .producto-compra button{
+        display: inline;
+        grid-area: precio;
+        position: relative;
+        font-size: 1.2rem;
+        padding: 10px;
+        border-radius: 5%;
+        background-color: black;
+        color: aliceblue;
+    }
+    .producto-compra a button{
+        grid-area: compra;
+    }
+    .producto-compra img{
+        grid-area: imagen;
+        height: 24rem;
+}
+@media (max-width: 375px){
+.header{
+    width: 100% ;
+    height: 60px;
+    justify-content: center;
+}
+.catalogo-links img{
+    height: 12rem;
+}
+.catalogo-links a{
+    font-size: 1rem;
+}
+.catalogo-links h2{
+    font-size: 2rem;
+    top: 6%;
+}
+.producto-compra h1{
+    font-size: 3.5rem;
+}
+.producto-compra p{
+    font-size: 1rem;
+}
+.producto-compra img{
+    height: 22rem;
+}
 }
 
