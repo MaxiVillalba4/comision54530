@@ -1,0 +1,80 @@
+@media (max-width: 425px){
+    .header{
+        width: 100% ;
+        height: 160px;
+        background-size: 100%;
+        background-color: $color-principal;
+        justify-content: center;
+        ul li a{
+            padding: 0;
+        }
+        li a.active, li a:hover{
+            background: none;
+        }
+    }
+    .catalogo-links{
+    a{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3rem;
+        top: 7%;
+    }
+    h1{
+        font-size: 4rem;
+        padding-left: 70px;
+    }
+    img{
+        height: 15rem;
+    }
+}
+        .producto-compra{
+        background-color: $color-secundario;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-rows: 20% 40% 20% 20% ;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen imagen"
+        "info precio"
+        "info compra";
+        justify-items: center;
+    
+    h1{
+        grid-area: titulo;
+        font-size: 4rem;
+        text-align: center;
+    }
+    p{
+        grid-area: info;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    
+    button{
+        display: inline;
+        grid-area: precio;
+        position: relative;
+        font-size: 1.2rem;
+        padding: 10px;
+        border-radius: 5%;
+        background-color: black;
+        color: aliceblue;
+    }
+    a button{
+        grid-area: compra;
+    }
+    img{
+        grid-area: imagen;
+        height: 24rem;
+}}
+.portada{
+    display: flex;
+    flex-direction: column;
+    a{font-size: 2rem;}
+}}

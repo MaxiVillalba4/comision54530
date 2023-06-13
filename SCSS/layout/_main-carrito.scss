@@ -1,0 +1,62 @@
+.tabla{
+    display: grid;
+    width: 90%;
+    align-items: normal;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 20% 50% 10%;
+    grid-template-areas: 
+    ". titulo ."
+    "articulos cantidad precio"
+    "info1 info2 info3"
+    ". comprar .";
+    margin: 50px 50px;
+    background-color: lightpink;
+    height: 100vh;
+    justify-content: space-between;
+    .tabla-titulo{
+        grid-area: titulo;
+        font-size: 4rem;
+    }
+    
+    .tabla-art{
+    grid-area: articulos;
+    font-size: 3rem;
+}
+
+.tabla-cant{
+    grid-area: cantidad;
+    font-size: 3rem;
+}
+
+.tabla-pre{
+    grid-area: precio;
+    font-size: 3rem;
+}
+
+.tabla-articulo{
+    grid-area: info1;
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+.tabla-cantidad{
+    grid-area: info2;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tabla-precio{
+    grid-area: info3;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tabla-comprar{
+    grid-area: comprar;
+    font-size: 3.5rem;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+}

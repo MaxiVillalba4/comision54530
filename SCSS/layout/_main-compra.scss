@@ -1,0 +1,46 @@
+.producto-compra {
+    display: grid;
+    width: 90%;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: 
+    ". producto ."
+    "img-prod info info"
+    "img-prod compra precio";
+    margin: 50px 50px;
+    background-color: lightpink;
+    justify-content: space-between;
+
+img{
+    grid-area: img-prod;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 30rem;
+}
+
+h1{
+    grid-area: producto;
+    font-size: 8rem;
+}
+
+p{
+    padding: 5%;
+    grid-area: info;
+    font-size: 2.5rem;
+}
+
+a{
+    grid-area: compra;
+}
+
+button{
+    grid-area: precio;
+    font-size: 2rem;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+}
+}

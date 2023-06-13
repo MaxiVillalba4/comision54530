@@ -1,0 +1,61 @@
+.portada {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 20% 40% 10%;
+    grid-template-areas: 
+    "titulo titulo ."
+    ". subtitulo subtitulo"
+    "imagen1 imagen2 imagen3"
+    "imagen1 imagen2 imagen3";
+    h1{
+        display: grid;
+        grid-area: titulo;
+        font-size: 8rem;
+        justify-content: center;
+        color: aliceblue;
+    }    
+    img{
+        height: 20rem;
+        border-radius: 15%;
+    }
+    h2{
+    display: grid;
+    grid-area: subtitulo;
+    font-size: 6rem;
+    justify-content: center;
+    color: $color-verde;
+    }
+    .imagen-portada1 {
+    display: grid;
+    grid-area: imagen1;
+    height: 20rem;
+    justify-content: center;
+    a{
+        @include link-portada
+    }
+}
+.imagen-portada2 {
+    display: grid;
+    grid-area: imagen2;
+    height: 20rem;
+    justify-content: center;
+
+    a{
+        @include link-portada
+        }
+}
+.imagen-portada3 {
+    display: grid;
+    grid-area: imagen3;
+    height: 20rem;
+    justify-content: center;
+    
+    a{
+        @include link-portada
+        }
+}
+a:hover{
+    color: $color-principal;
+}
+}

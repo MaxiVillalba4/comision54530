@@ -1,0 +1,54 @@
+@media (max-width: 768px){
+    .header
+        {width: 100% ;
+        justify-content: center;
+    .header ul li a{
+        font-size: 1rem;
+        justify-content: center;
+    }}
+    .catalogo-links{
+    a{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 4rem;
+        top: 8%;
+    }
+    img{
+    height: 18rem;
+    }
+}
+    .producto-compra{ h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.4rem;
+        padding-left: 70px;
+    }
+    a{
+        padding-left: 70px;
+    }
+    img{
+        height: 20rem;
+        padding-bottom: 20px;
+    }
+    button{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+.portada{
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    img{
+        height: 10rem;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+}
+}

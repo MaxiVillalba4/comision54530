@@ -1,0 +1,11 @@
+@mixin link-portada{
+        position: relative;
+        line-height:normal;
+        display:table-caption;
+        margin:0;
+        padding:5px;
+        text-align: center;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 2rem;
+}
