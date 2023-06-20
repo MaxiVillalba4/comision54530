@@ -9,21 +9,6 @@ html {
   background-size: 100%;
 }
 
-footer {
-  display: flex;
-  background-color: lightgreen;
-  position: fixed;
-  bottom: 0;
-  height: auto;
-  left: 0;
-  width: 100%;
-  justify-content: space-between;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-}
-
 .header {
   background: rgb(138, 44, 226);
   height: 80px;
@@ -399,27 +384,46 @@ footer a {
   margin: 50px 50px;
   background-color: lightpink;
   justify-content: space-between;
+  gap: 10px;
 }
 .nosotros-info img {
   grid-area: logo;
-  height: 25rem;
+  height: 22rem;
 }
 .nosotros-info p {
   grid-area: info;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 30px;
 }
 .nosotros-info h1 {
   grid-area: titulo;
   font-size: 7rem;
-  padding-left: 60px;
+  padding-left: 40px;
   padding-top: 30px;
 }
 .nosotros-info .fabrica {
   grid-area: fabrica;
-  height: 22rem;
+  height: 16rem;
 }
 .nosotros-info .fabrica-info {
   grid-area: info-fabrica;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  background-color: lightgreen;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 1024px) {
@@ -456,6 +460,15 @@ footer a {
   }
   .portada img {
     height: 15rem;
+  }
+  .nosotros-info img {
+    height: 18rem;
+  }
+  .nosotros-info .fabrica {
+    height: 14rem;
+  }
+  .nosotros-info p {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -495,7 +508,12 @@ footer a {
     font-size: 1.5rem;
     padding: 10px;
   }
+  .portada {
+    display: flex;
+    flex-direction: column;
+  }
   .portada h1 {
+    text-align: center;
     font-size: 5rem;
   }
   .portada h2 {
