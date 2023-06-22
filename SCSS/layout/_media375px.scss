@@ -1,4 +1,9 @@
 @media (max-width: 375px){
+    .header{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
     .catalogo-links{ img{
         height: 12rem;
     }
@@ -18,4 +23,11 @@
     img{
         height: 22rem;
     }
-    }}
+    }
+.nosotros-info{
+    margin: 0;
+    margin-bottom: 50px;
+}
+footer{
+    h3{font-size: 1rem;}
+}}

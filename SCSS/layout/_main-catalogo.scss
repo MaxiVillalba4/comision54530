@@ -8,6 +8,7 @@
     "imagen3 imagen4"
     "imagen5 imagen6";
     align-items: center;
+    justify-content: center;
     h2{
         display: flex;
         grid-area: titulo-seccion;
@@ -111,23 +112,20 @@ padding: 10%;
     display: flex;
     grid-area: imagen5;
     justify-content: center;
-    padding: 10%;
+padding: 10%;
 }
 
 .sextaimg{
     display: flex;
     grid-area: imagen6;
     justify-content: center;
-    padding: 10%;
+padding: 10%;
 }
 img{
     display: flex;
     height: 25rem;
 }
-
 }
-
-
 .accesorios-catalogo{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -191,7 +189,10 @@ img{
     text-align: center;
     text-decoration: none;
     color: aliceblue;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 img{height: 25rem;}
+h1{color: whitesmoke;
+text-align: center;
+font-size: 10rem;}
 }

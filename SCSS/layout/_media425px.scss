@@ -4,18 +4,14 @@
         height: 160px;
         background-size: 100%;
         background-color: $color-principal;
-        justify-content: center;
         ul li a{
             padding: 0;
         }
-        li a.active, li a:hover{
-            background: none;
-        }
     }
     .catalogo-links{
-    a{
-        font-size: 2rem;
-    }
+        a{
+            font-size: 1rem;
+        }
     h2{
         font-size: 3rem;
         top: 7%;
@@ -27,6 +23,7 @@
     img{
         height: 15rem;
     }
+
 }
         .producto-compra{
         background-color: $color-secundario;
@@ -74,7 +71,24 @@
         height: 24rem;
 }}
 .portada{
+    a{font-size: 2rem;}
+}
+.nosotros-info{
     display: flex;
     flex-direction: column;
-    a{font-size: 2rem;}
-}}
+    width: 100%;
+    margin: 0;
+    margin-bottom: 55px;
+    margin-top: 10px;
+    padding-right: 10px;
+    img{height: 10rem;
+    padding: 10px;}
+    p{
+        font-size: 1.5rem;
+    }
+    .fabrica{height: 10rem;
+    padding: 10px;}
+
+    h1{font-size: 4rem;
+    padding-right: 25px;}
+    }}
