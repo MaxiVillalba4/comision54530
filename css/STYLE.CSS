@@ -483,6 +483,9 @@ footer a {
   .nosotros-info h1 {
     font-size: 5.8rem;
   }
+  .tabla .tabla-titulo {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -551,6 +554,9 @@ footer a {
   }
   .nosotros-info h1 {
     font-size: 4.5rem;
+  }
+  .tabla .tabla-pre, .tabla .tabla-cant, .tabla .tabla-art {
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 425px) {
@@ -644,6 +650,25 @@ footer a {
     font-size: 4rem;
     padding-right: 25px;
   }
+  .tabla {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .tabla .tabla-titulo {
+    font-size: 2.5rem;
+  }
+  .tabla .tabla-pre, .tabla .tabla-cant, .tabla .tabla-art {
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+  .tabla .tabla-comprar {
+    font-size: 2rem;
+    padding: 5px;
+  }
+  .tabla .tabla-articulo, .tabla .tabla-cantidad, .tabla .tabla-precio {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 375px) {
   .header {
@@ -653,9 +678,6 @@ footer a {
   }
   .catalogo-links img {
     height: 12rem;
-  }
-  .catalogo-links a {
-    font-size: 1rem;
   }
   .catalogo-links h2 {
     font-size: 2rem;
@@ -673,6 +695,16 @@ footer a {
   .nosotros-info {
     margin: 0;
     margin-bottom: 50px;
+  }
+  .tabla .tabla-titulo {
+    padding: 0;
+    font-size: 2.2rem;
+  }
+  .tabla .tabla-pre, .tabla .tabla-cant, .tabla .tabla-art {
+    font-size: 1.2rem;
+  }
+  .tabla .tabla-comprar {
+    font-size: 1.7rem;
   }
   footer h3 {
     font-size: 1rem;

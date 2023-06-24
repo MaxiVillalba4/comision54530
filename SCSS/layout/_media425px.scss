@@ -91,4 +91,23 @@
 
     h1{font-size: 4rem;
     padding-right: 25px;}
-    }}
+    }
+    .tabla{width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+        .tabla-titulo{
+            font-size: 2.5rem;
+        }
+        .tabla-pre , .tabla-cant , .tabla-art{
+            font-size: 1.3rem;
+            padding: 5px;
+        }
+        .tabla-comprar{
+            font-size: 2rem;
+            padding: 5px;
+        }
+        .tabla-articulo , .tabla-cantidad , .tabla-precio{
+            font-size: 1.5rem;
+        }
+    }
+}
